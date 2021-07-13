@@ -1,0 +1,116 @@
+body{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+.logo > .fa-dove{
+    width: 40px;
+    height: 50px;
+    color: white;
+    margin-top: 6px;
+}
+.logo > .fa-dove:hover{
+    color: blue;
+}
+.menu-list ul{
+    display: flex;
+}
+li{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+li:hover{
+    color: white;
+    background-color: blue;
+}
+.menu-list li{
+    list-style: none;
+    margin-right: 50px;
+    font-size: 1.5em;
+    justify-content: center;
+    padding-top: 2.5px;
+}
+.menu-list .fa-registered{
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin-right: 30px;
+}
+.menu-list .fa-registered:hover{
+    color: blue;
+}
+/* style of hero part  */
+.hero-part{
+    display: flex;
+}
+.hero-info{
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.hero-info h1{
+    font-size: 4em;
+    color: white;
+    margin: 0;
+}
+.hero-info p{
+    font-size: 20px;
+    color: white;
+}
+.link-button{
+    padding: 0 40px;
+    box-shadow: 10px;
+    border: 10px solid white;
+    border-radius: 30px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+.link-button:hover{
+    color: white;
+    background-color: blue;
+    border: 10px solid blue;
+}
+/* style of photo part */
+
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right:40px;  
+}
+.photo-frame{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.photo-frame:hover .photo-info{
+    display: block;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-info{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    padding: 10px;
+}
+
+/* style for transform and transition  */
+.photo-frame:hover .photo{
+   transform: scale(1.3) skew(30deg);
+   transition: transform 2s ease;
+}
